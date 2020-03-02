@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ewo/Desktop/предметы/alghoritms/lab1/EX6/main.cpp
+iostream
+-
+fstream
+-
+vector
+-
+queue
+-
+
