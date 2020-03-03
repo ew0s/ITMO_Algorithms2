@@ -1,1 +1,1 @@
-# ITMO Second semestr
+# ITMO algorithms Second semestr
