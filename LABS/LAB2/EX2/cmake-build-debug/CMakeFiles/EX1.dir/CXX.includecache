@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ewo/Desktop/предметы/Alghoritms/lab2/EX2/main.cpp
+fstream
+-
+vector
+-
+algorithm
+-
+
