@@ -6,8 +6,7 @@ std::vector <std::vector <int>> graph;
 std::vector <std::vector <int>> graphRevers;
 std::vector <char> isBurn;
 std::vector <int> topSequence;
-std::vector <int> strongComponent;
-std::vector <int> answer;
+int strongComponent[20000];
 
 
 void graphDFS (int top){
@@ -23,14 +22,14 @@ void graphDFS (int top){
 }
 
 
-void reversGraphDFS (int top) {
+void reversGraphDFS (int top, int componentsCount) {
 
     isBurn[top] = true;
-    strongComponent.push_back(top);
+    strongComponent[top] = componentsCount;
 
     for (int i : graphRevers[top]) {
         if (!isBurn[i]) {
-            reversGraphDFS(i);
+            reversGraphDFS(i, componentsCount);
         }
     }
 }
@@ -73,18 +72,14 @@ int main () {
     for (int top : topSequence){
 
         if (!isBurn[top]) {
-            reversGraphDFS(top);
             componentCount++;
-            for (int j = 0; j < strongComponent.size(); j++){
-                answer.push_back(componentCount);
-            }
-            strongComponent.clear();
+            reversGraphDFS(top, componentCount);
         }
     }
 
     fOut << componentCount << "\n";
-    for (int i : answer)
-        fOut << i << " ";
+    for (int i = 0; i < n; i++)
+        fOut << strongComponent[i] << " ";
 
     fOut.close();
 
