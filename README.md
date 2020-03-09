@@ -1,6 +1,6 @@
 # ITMO algorithms second semestr
 
-## laboratories works
+## [laboratories works](LABS)
 
-* [Laboratory work №1](LABS/LAB1)
-* [Laboratory work №2](LABS/LAB2)
+* [Laboratory work №1 - BFS](LABS/LAB1)
+* [Laboratory work №2 - DFS](LABS/LAB2)
