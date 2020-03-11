@@ -1,7 +1,5 @@
 # ITMO algorithms second semestr
 
-## [laboratories works](LABS)
-
 ## [Laboratory work №1 - BFS](LABS/LAB1)
 [A - Adjacency Matrix](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB1/A_Adjacency_Matrix/main.cpp)
 
