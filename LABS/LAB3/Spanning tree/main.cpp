@@ -4,15 +4,15 @@
 #include <queue>
 #include <fstream>
 
+
+std::vector <std::pair<double, int>> graph;
+std::vector <char> isBurn;
+
+
 struct top {
     int x_;
     int y_;
 };
-
-
-void makeMST (std::vector <std::vector <double>> &graph) {
-
-}
 
 
 int main() {
@@ -22,10 +22,8 @@ int main() {
     int n;
     fin >> n;
 
-    std::vector <std::vector <double >> graph (n);
     std::vector <top> graph_field;
-    std::vector <char> isBurn (n, 0);
-    int r = 0;
+    graph.reserve(n);
 
     int x, y;
 
@@ -42,12 +40,14 @@ int main() {
             double distance = sqrt(pow (graph_field[j].x_ - graph_field[i].x_, 2) +
             pow (graph_field[j].y_ - graph_field[i].y_, 2));
 
-            graph[i].push_back(distance);
-            graph[j].push_back(distance);
+            graph.push_back(distance, i);
+            graph[j] = {distance, i};
         }
     }
 
-    std::priority_queue()
+    for (int i = 0; i < n; i++) {
+        std::cout << i << " -> " <<  graph[i].second << "with distance " << graph[i].first << "\n";
+    }
 
 
     return 0;

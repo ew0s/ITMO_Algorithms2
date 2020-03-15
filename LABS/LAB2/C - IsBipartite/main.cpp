@@ -1,90 +1,75 @@
-#include <vector>
+#include <iostream>
 #include <fstream>
-#include <algorithm>
+#include <vector>
 
-std::vector <std::vector <int>> graph;
-std::vector <std::vector <int>> graphRevers;
-std::vector <char> isBurn;
-std::vector <int> topSequence;
-std::vector <int> strongComponent;
-std::vector <int> answer;
+std::vector<std::vector <int>> graph;
+std::vector <int> color;
 
 
-void graphDFS (int top){
+inline int transposition (int whatColor) {
 
-    isBurn[top] = true;
+    (whatColor == 1) ? whatColor = 2 : whatColor = 1;
+    return whatColor;
+}
+
+void DFS (const int& top, int whatColor, bool& isBipartite) {
+
+    color[top] = whatColor;
 
     for (int i : graph[top]) {
-        if (!isBurn[i]) {
-            graphDFS(i);
+
+        if (color[i] == 0) {
+            DFS (i, transposition(whatColor), isBipartite);
         }
-    }
-    topSequence.push_back(top);
-}
 
+        if (!isBipartite) {
+            return;
+        }
 
-void reversGraphDFS (int top) {
-
-    isBurn[top] = true;
-    strongComponent.push_back(top);
-
-    for (int i : graphRevers[top]) {
-        if (!isBurn[i]) {
-            reversGraphDFS(i);
+        if (color[i] == whatColor) {
+            isBipartite = false;
+            return;
         }
     }
 }
 
-
-int main () {
-    std::ifstream fin ("cond.in");
-    std::ofstream fOut ("cond.out");
+int main() {
+    std::ifstream fin ("bipartite.in");
+    std::ofstream fOut ("bipartite.out");
 
     int n, m;
     fin >> n >> m;
 
     graph.resize(n);
-    graphRevers.resize(n);
-    isBurn.resize(n);
+    color.resize(n);
 
     int startRib;
     int finishRib;
 
-    for (int i = 0; i < m; i++){
-
+    for (int i = 0; i < m; i++) // Filling graph
+    {
         fin >> startRib >> finishRib;
         graph[startRib - 1].push_back(finishRib - 1);
-        graphRevers[finishRib - 1].push_back(startRib - 1);
+        graph[finishRib - 1].push_back(startRib - 1);
     }
     fin.close();
 
-    int componentCount = 0;
+    int whatColor = 1;
+    bool isBipartite = true;
 
-    isBurn.assign(n, false);
-    for (int i = 0; i < n; i++){
+    for (int i = 0; i < graph.size(); i++){
 
-        if (!isBurn[i]) {
-            graphDFS(i);
+        if (color[i] == 0) {
+            DFS (i, whatColor, isBipartite);
         }
     }
 
-    isBurn.assign(n, false);
-    std::reverse (topSequence.begin(), topSequence.end());
-    for (int top : topSequence){
-
-        if (!isBurn[top]) {
-            reversGraphDFS(top);
-            componentCount++;
-            for (int j = 0; j < strongComponent.size(); j++){
-                answer.push_back(componentCount);
-            }
-            strongComponent.clear();
-        }
+    if (isBipartite) {
+        fOut << "YES";
     }
-
-    fOut << componentCount << "\n";
-    for (int i : answer)
-        fOut << i << " ";
+    else {
+        fOut << "NO";
+    }
 
     fOut.close();
 
