@@ -31,4 +31,4 @@
 
 [B - Spanning tree](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB3/B%20-%20Spanning%20tree/main.cpp)
 
-[C - Spanning tree 3](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB3/C%20-%20Spanning%20tree%C2%A0/main.cpp)
+[C - Spanning tree 3](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB3/C%20-%20Spanning%20tree%C2%A0-%202/main.cpp)
