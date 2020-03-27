@@ -25,3 +25,10 @@
 [E - Hamilton way](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB2/E%20-%20Hamilton%20way/main.cpp)
 
 [F - Game](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB2/F%20-%20Game/main.cpp)
+
+## [Laboratory work №3 - MST](LABS/LAB3)
+[A - Top's degree](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB3/A%20-%20Top's%20degree/main.cpp)
+
+[B - Spanning tree](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB3/B%20-%20Spanning%20tree/main.cpp)
+
+[C - Spanning tree 3](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB3/C%20-%20Spanning%20tree%C2%A0/main.cpp)
