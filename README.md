@@ -32,3 +32,11 @@
 [B - Spanning tree](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB3/B%20-%20Spanning%20tree/main.cpp)
 
 [C - Spanning tree 3](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB3/C%20-%20Spanning%20tree%C2%A0-%202/main.cpp)
+
+## [Laboratory work №4 - Shortest paths in a graph](LABS)
+
+[A - Shortest path between two vertexes (Dijkstra O(V^2 + E))](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB%204/A%20-%20Shortest%20path/main.cpp)
+
+[B - Shortest path from all to all vertexes (Belman Ford algorithm)](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB%204/B%20-%20Shotest%20path%20from%20all%20vertexes/main.cpp)
+
+[C - Shortest path from first vertex to all (Dijkstra O(ElogV))](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB%204/C%20-%20Shortest%20path/main.cpp)
