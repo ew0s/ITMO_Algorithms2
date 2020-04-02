@@ -40,3 +40,5 @@
 [B - Shortest path from all to all vertexes (Belman Ford algorithm)](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB%204/B%20-%20Shotest%20path%20from%20all%20vertexes/main.cpp)
 
 [C - Shortest path from first vertex to all (Dijkstra O(ElogV))](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB%204/C%20-%20Shortest%20path/main.cpp)
+
+[E - Negative cycle](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB%204/E%20-%20Negative%20cycle/main.cpp)
