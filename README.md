@@ -39,7 +39,7 @@
 
 [B - Shortest path from all to all vertexes (Belman Ford algorithm O(V * E))](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB%204/B%20-%20Shotest%20path%20from%20all%20vertexes/main.cpp)
 
-[C - Shortest path from first vertex to all (Dijkstra O(ElogV))](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB%204/C%20-%20Shortest%20path/main.cpp)
+[C - Shortest path from first vertex to all (Dijkstra O(E * logV))](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB%204/C%20-%20Shortest%20path/main.cpp)
 
 
 [D - Shortest path and etc (Belman Ford algorithm O(V * E))](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB%204/D%20-%20Shortest%20paths%20and%20etc/main.cpp)
