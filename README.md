@@ -45,3 +45,7 @@
 [D - Shortest path and etc (Belman Ford algorithm O(V * E))](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB%204/D%20-%20Shortest%20paths%20and%20etc/main.cpp)
 
 [E - Negative cycle (Belman Ford algorithm O(V * E))](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB%204/E%20-%20Negative%20cycle/main.cpp)
+
+## [Laboratory work №5 - Flows in a graphs]
+
+[A - Max flow](LABS/LAB5/Max Flow/main.cpp)
