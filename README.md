@@ -48,4 +48,6 @@
 
 ## [Laboratory work №5 - Flows in a graphs](LABS/LAB5)
 
-[A - Max flow](LABS/LAB5/Max Flow)
+[A - Max flow](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB5/Max%20Flow/main.cpp)
+
+[B - Max matching](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB5/Matching/main.cpp)
