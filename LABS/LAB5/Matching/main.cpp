@@ -5,13 +5,13 @@
 
 using std::vector;
 
-typedef vector <vector <int>> Matrix;
+typedef vector <vector <bool>> Matrix;
 typedef vector <bool> bool_vector;
 typedef vector <int> int_vector;
 
 int Ford_Felkerson (Matrix &, int, int);
 
-bool BFS (Matrix &, int, int, int_vector &);
+int BFS (Matrix &, int, int, int_vector &);
 
 
 int main()
@@ -22,20 +22,20 @@ int main()
     int n, m, k;
     fin >> n >> m >> k;
 
-    Matrix graph (n + m + 2, int_vector (n + m + 2));
+    Matrix graph (n + m + 2, bool_vector(n + m + 2, false));
 
     int from, to;
     for (int i = 0; i < k; i++)
     {
         fin >> from >> to;
-        graph[from][to + n] = 1;
+        graph[from][to + n] = true;
     }
 
     for (int i = 1; i <= n; i++)
-        graph[0][i] = 1;
+        graph[0][i] = true;
 
     for (int i = n + 1; i <= m + n; i++)
-        graph[i][n + m + 1] = 1;
+        graph[i][n + m + 1] = true;
 
     fin.close();
 
@@ -47,7 +47,7 @@ int main()
 }
 
 
-bool BFS (Matrix &graph, int s, int t, int_vector &parent)
+int BFS (Matrix &graph, int s, int t, int_vector &parent)
 {
     std::queue <int> q;
     bool_vector visited (graph.size(), false);
@@ -64,7 +64,7 @@ bool BFS (Matrix &graph, int s, int t, int_vector &parent)
 
         for (int to = 0; to < graph.size(); to++)
         {
-            if (!visited[to] && graph[from][to] == 1)
+            if (!visited[to] && graph[from][to])
             {
                 q.push(to);
                 visited[to] = true;
@@ -88,8 +88,8 @@ int Ford_Felkerson (Matrix &graph, int s, int t)
         for (int to = t; to != s; to = parent[to])
         {
             from = parent[to];
-            graph[from][to] -= 1;
-            graph[to][from] += 1;
+            graph[from][to] = false;
+            graph[to][from] = true;
         }
         max_flow++;
     }
