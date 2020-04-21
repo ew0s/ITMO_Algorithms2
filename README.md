@@ -46,6 +46,6 @@
 
 [E - Negative cycle (Belman Ford algorithm O(V * E))](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB%204/E%20-%20Negative%20cycle/main.cpp)
 
-## [Laboratory work №5 - Flows in a graphs]
+## [Laboratory work №5 - Flows in a graphs](LABS/LAB5)
 
-[A - Max flow](LABS/LAB5/Max Flow/main.cpp)
+[A - Max flow](LABS/LAB5/Max Flow)
