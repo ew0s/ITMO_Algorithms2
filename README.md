@@ -55,3 +55,13 @@
 [C - Decomposition of the flow (Dinic's algorithm)](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB5/Graph's%20Decomposition/main.cpp)
 
 [D - Graph's circulation](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB5/Graph%20Circulation/main.cpp)
+
+## [Laboratory work №6 - substrings searching](LABS/LAB6)
+
+[A - Naive substring search](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB6/A%20-%20naive%20substring%20finding%20in%20string/main.cpp)
+
+[B - Fast substring search (KMT algorithm)](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB6/B%20-%20Fast%20substring%20searching/main.cpp)
+
+[C - Prefix function](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB6/%D0%A1%20-%20Prefics%20function/main.cpp)
+
+[D - soon]()
