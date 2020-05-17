@@ -53,3 +53,5 @@
 [B - Max matching](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB5/Matching/main.cpp)
 
 [C - Decomposition of the flow (Dinic's algorithm)](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB5/Graph's%20Decomposition/main.cpp)
+
+[D - Graph's circulation](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB5/Graph%20Circulation/main.cpp)
