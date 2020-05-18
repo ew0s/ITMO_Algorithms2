@@ -64,4 +64,4 @@
 
 [C - Prefix function](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB6/%D0%A1%20-%20Prefics%20function/main.cpp)
 
-[D - soon]()
+[D - KMT machine](https://github.com/ew0s/ITMO_Algorithms2/blob/master/LABS/LAB6/D%20-%20KMT%20machine/main.cpp)
